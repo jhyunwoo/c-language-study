@@ -1,1 +1,5 @@
-printf("입력산 수 %d는 홀수입니다.\n", input);
+if (i >= a)
+        // {
+        //     printf(" " * (i - a));
+        //     printf("*" * 2);
+        // }
