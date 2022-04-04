@@ -3,18 +3,31 @@
 int main(void)
 {
     int a, i, j;
-    int b = 1;
+    int b = 0;
 
     printf("roop time: ");
     scanf("%d", &a);
 
-    for (i = 1; i <= 2 * (a ^ 2) - a; i++)
+    for (i = 1; i <= 2 * a - 1; i++)
     {
-        b = i;
-        if (b > 0)
+        if (i <= a)
         {
-            printf("*");
-            b = b - 1;
+            for (j = 1; j <= i; j++)
+            {
+                if (b == 0)
+                {
+                    printf("*");
+                }
+                else
+                {
+                    printf(" ");
+                }
+            }
         }
+        else
+        {
+                }
+        printf("\n");
     }
+    return 0;
 }
