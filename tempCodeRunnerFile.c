@@ -1,5 +1,1 @@
-if (i >= a)
-        // {
-        //     printf(" " * (i - a));
-        //     printf("*" * 2);
-        // }
+printf("%d , %d", star, space);
