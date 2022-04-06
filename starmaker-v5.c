@@ -3,16 +3,16 @@
 int main(void)
 {
     int i, star, space, userInput;
-    int marker = 1;
+
     printf("roop time: ");
     scanf("%d", &userInput);
-
+    int marker = 1;
     star = 1;
     space = userInput - marker;
 
-    for (i = 1; i < 2 * userInput * userInput - userInput + 1; i++)
+    for (i = 1; i <= userInput * userInput + userInput - 1; i++)
     {
-        if (marker < userInput)
+        if (marker <= userInput)
         {
             if (star > 0)
             {
@@ -21,48 +21,57 @@ int main(void)
             }
             else if (space > 0)
             {
-                printf("M");
+                printf(" ");
                 space = space - 1;
             }
-            else
+            else if (space == 0 && star == 0)
             {
                 printf("\n");
                 marker = marker + 1;
                 star = marker;
                 space = userInput - marker;
             }
+
             if (marker == userInput)
             {
                 star = 1;
-                space = userInput - 1;
+                space = marker - 1;
             }
         }
-        // else
-        // {
-
-        //     if (star > 0)
-        //     {
-        //         printf("*");
-        //         star = star - 1;
-        //     }
-        //     else if (space > 0)
-        //     {
-        //         printf("M");
-        //         space = space - 1;
-        //     }
-        //     else
-        //     {
-        //         printf("\n");
-        //         marker = marker + 1;
-        //         star = marker;
-        //         space = userInput - marker;
-        //     }
-        //     if (marker == userInput)
-        //     {
-        //         star = userInput - 1;
-        //         space = 1;
-        //     }
-        // }
-        return 0;
     }
+    marker = 1;
+    star = 1;
+    space = userInput - marker;
+    printf("\n");
+
+    for (i = 1; i <= userInput * userInput + userInput - 1; i++)
+    {
+        if (marker <= userInput)
+        {
+            if (star > 0)
+            {
+                printf(" ");
+                star = star - 1;
+            }
+            else if (space > 0)
+            {
+                printf("*");
+                space = space - 1;
+            }
+            else if (space == 0 && star == 0)
+            {
+                printf("\n");
+                marker = marker + 1;
+                star = marker;
+                space = userInput - marker;
+            }
+
+            if (marker == userInput)
+            {
+                star = 1;
+                space = marker - 1;
+            }
+        }
+    }
+    return 0;
 }
