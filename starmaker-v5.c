@@ -46,7 +46,7 @@ int main(void)
 
     for (i = 1; i <= userInput * userInput + userInput - 1; i++)
     {
-        if (marker <= userInput)
+        if (marker < userInput)
         {
             if (star > 0)
             {
