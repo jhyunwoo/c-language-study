@@ -31,6 +31,7 @@ int main(void)
                 star = marker;
                 space = userInput - marker;
             }
+
             if (marker == userInput)
             {
                 star = 1;
