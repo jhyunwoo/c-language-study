@@ -1,1 +1,1 @@
-        // printf("enter character: ");
+a = a - 1;
