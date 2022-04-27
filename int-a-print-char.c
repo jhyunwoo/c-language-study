@@ -7,11 +7,12 @@ int printEDCBA(int a){
     }
 }
 
+
 int main(void){
     int input;
     printf("input int: ");
     scanf("%d", &input);
-
+    case();
     printEDCBA(input);
     return 0;
 }
