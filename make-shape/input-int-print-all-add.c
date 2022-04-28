@@ -4,8 +4,6 @@ int addAll(int a);
 
 int main(void){
     int input;
-
-    printf("input int under 100 : ");
     scanf("%d", &input);
 
     printf("%d\n", addAll(input));
