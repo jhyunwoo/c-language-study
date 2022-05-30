@@ -9,7 +9,7 @@ struct students {
 typedef struct students student;
 
 int main(void){
-    student st1 = {"Moon", "Seoul", 25};
+    student st1 = {"Moon Jae In", "Seoul", 25};
     struct students st2 = {"John", "London", 30};
 
     printf("학생 1은 성이 %s이고 %s에 살며 %d살이다.\n", st1.name, st1.address, st1.age);
